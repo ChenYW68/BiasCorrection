@@ -1,4 +1,4 @@
-## Downscaler model
+## Spatially-varying coefficients (SVC) model
 
 * Here we use the R package *spBayes* to fit the downscaler model to a subset of the US 2011 air quality data; the downscaler model is fitted to PM2.5 concentration on the log scale.
 * The predictions are backtransformed to the original scale for predictive performance assessment.
