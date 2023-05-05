@@ -1,16 +1,16 @@
 ## Spatially-varying coefficients (SVC) model
 
-* Here we use the R package *spBayes* to fit the downscaler model to a subset of the US 2011 air quality data; the downscaler model is fitted to PM2.5 concentration on the log scale.
+* Here we use the R package *spBayes* to fit the SVC model to a subset of the BTH region in both seasons of 2015 for PM$_2.5$ concentration datasets; the SVC model is fitted to PM$_2.5$ concentration on the square root scale, and the CMAQ covariate on the square root scale.
 * The predictions are backtransformed to the original scale for predictive performance assessment.
-* Parameters of the downscaler model are estimated by running an MCMC algorithm for n.samples number of iterations. Posterior inference is based on the MCMC samples post burn-in (burn.in number of iterations).
-* The downscaler model employs an exponential covariance function to model the spatial dependence in observed PM2.5 concentration measured at monitors with covariance parameters sigma.sq, phi and tau.sq.
+* Parameters of the SVC model are estimated by running an MCMC algorithm for n.samples number of iterations. Posterior inference is based on the MCMC samples post burn-in (burn.in number of iterations).
+* The SVC model employs an exponential covariance function to model the spatial dependence in observed PM$_2.5$ concentration measured at monitors with covariance parameters sigma.sq, phi and tau.sq.
 * A flat priors is placed on the regression coefficients (e.g. intercept and coefficient of CMAQ), an Inverse Gamma prior is placed on sigma.sq and tau.sq, and a Uniform prior is specified for phi.
 * The R workspace contains:
 
 * Data:
 
-- train_dat: square root PM2.5 concentration and covariates at 12 training cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
-- test_dat:  square root PM2.5 concentration and covariates at a testing cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
+- train_dat: square root PM$_2.5$concentration and covariates at 12 training cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
+- test_dat:  square root PM$_2.5$ concentration and covariates at a testing cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
 
 
 ```r
