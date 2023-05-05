@@ -1,4 +1,4 @@
-## Spatially-varying coefficients (SVC) model
+## Spatially-varying coefficient (SVC) models
 
 * Here we use the R package *spBayes* to fit the SVC model to a subset of the BTH region in both seasons of 2015 for $PM_{2.5}$ concentration datasets; the SVC model is fitted to $PM_{2.5}$ concentration on the square root scale, and the CMAQ covariate on the square root scale.
 * The predictions are backtransformed to the original scale for predictive performance assessment.
