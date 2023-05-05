@@ -9,8 +9,8 @@
 
 * Data:
 
-- train_dat: square root PM$_2.5$concentration and covariates at 12 training cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
-- test_dat:  square root PM$_2.5$ concentration and covariates at a testing cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
++  train_dat: square root PM$_2.5$concentration and covariates at 12 training cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
++  test_dat:  square root PM$_2.5$ concentration and covariates at a testing cities from Jun 1, 2015 -Aug 31, 2015 and from Nov 1, 2015 -Jan 31, 2016
 
 
 ```r
